@@ -1,0 +1,40 @@
+table {
+    text-align: center;
+    position: relative;
+    border-collapse: collapse; 
+    background-color: #f6f6f6;
+  }/* Spacing */
+  td, th {
+    border: 2px solid #0b0b0b;
+    width: 500px;
+    padding: 20px;
+    border-width:thick 30%;
+    font-size: 120%;
+  }
+  th {
+    background: brown;
+    color: white;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+  .primary{
+    background-color: #000000
+  }
+  
+  tfoot > tr  {
+    background: black;
+    color: white;
+  }
+  tbody > tr:hover {
+    background-color: #ffc107;
+    /* background-color: #cdeead; */
+  }
+
+  .p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  h1 {
+    text-align: center;
+}
