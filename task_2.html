@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+        <link rel="icon" type="image/png" sizes="16x16" href="register.png"> <!--Logo for tab-->
+        <link href="style2.css" rel="stylesheet"> <!--Link to style.css file to access the design-->
+		<title>Registration Form</title>
+		<style>
+			body {
+			  background-image: url('background.png');
+			}
+			</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<center>
+				<video width="400" height="240" autoplay>
+				<source src="video.mp4" type="video/mp4">
+			  	</video>
+			
+			<h1 style="color:rgb(7, 7, 131)">Conference Registration Form</h1><br>
+			</center>
+            <form action="">
+				<label for="name">Full Name: <span style="color:red;">*</span></label>
+				<input type="text" id="name" name="name" placeholder="Enter your full name" required/>
+
+                <label for="email">Email: <span style="color:red;">*</span></label>
+				<input type="email" id="email" name="email" placeholder="Enter your email address" required/>
+
+				<label for="age">Age: <span style="color:red;">*</span></label>
+				<input type="text" id="age" name="age" min="18" max="99" placeholder="Enter your age" required/>
+
+				<label for="gender">Gender:</label>
+                <input id="sex" type="radio" name="sex" value="male">Male
+                <input id="sex" type="radio" name="sex" value="female">Female 
+
+                <br><br>
+                <label for="country">Country of Residence:</label>
+                <select id="country" name="country">
+					<option value="malaysia"> Malaysia</option>
+					<option value="indonesia"> Indonesia </option>
+					<option value="thailand"> Thailand </option>
+				</select>
+
+                <label for="interest">Area of Interest:</label>
+                <div>  
+                    <input type="checkbox" name="interest" value="Software Development"> Software Development <br>
+                    <input type="checkbox" name="interest" value="Data Science"> Data Science<br>
+                    <input type="checkbox" name="interest" value="Cybersecurity"> Cybersecurity<br>
+                    <input type="checkbox" name="interest" value="Artificial Intelligence"> Artificial Intelligence
+                </div> 
+
+                <br>
+                <label for="experience">Experience Level:</label>
+                <input id="experience" type="radio" name="experience" value="beginner">Beginner  
+                <input id="experience" type="radio" name="experience" value="intermediate">Intermediate 
+                <input id="experience" type="radio" name="experience" value="advanced">Advanced
+				<br><br>
+                
+                <label for="comments">Comments or Question:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Any comments or questions?"></textarea>
+                <br> <br>
+                
+                <button type="submit" style="background-color: rgb(20, 170, 20);">
+					Register
+				</button> <br><br>
+                <button type="submit">
+					Reset
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
